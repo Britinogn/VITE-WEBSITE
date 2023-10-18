@@ -11,38 +11,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
     <!-- <div id="app"></div> -->
 
     <header class="primary-header">
       <div class="container">
-        <a href="#"><img src="/Images/logo.svg" alt="logo"></a>
+        <div class="nav-wrapper">
 
-        <nav class="primary-navigation">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+          <a href="#"><img src="/Images/logo.svg" alt="logo"></a>
+
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <img class="icon-hamburger" src="Images/icon-hamburger.svg" alt="Menu Icon" aria-hidden="true">
+            <img class="icon-close" src="Images/icon-close.svg" alt="Close Icon" aria-hidden="true">
+            <span class="visually-hidden">MeNu</span>
+          </button>
+  
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul aria-label="Primary" role="list" class="nav-list">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/portfolio.html">Service</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          
+          <button class="button | display-sm-none display-md-inline-flex">Get Started</button>
+
+        </div>
         
-        <button class="button">Get Started</button>
       </div>
     </header>
 
     <main>
-      <section>
+      <section class="padding-block-900"> 
         <div class="container">
           <div class="even-columns">
 
-            <div>
+            <div class="flow">
+
               <h1 class="fs-primary-heading fw-bold">
                 We Offer the best of Products
               </h1>
-              <p>
+              <p data-width="wide">
                 We are well Managed.
                 We make it simple software teams to 
                 plan day-today tasks while keeping in touch
@@ -62,49 +75,52 @@
 
       <!-- section for About -->
 
-      <section>
+      <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
-            <div>
+            <div class="flow">
               <h2 class="fs-secondary-heading fw-bold">
                 Why Us?
               </h2>
-              <p>We manage your website making it much easier for your clients accessibility.</p>
+              <p data-width="wide">We manage your website making it much easier for your clients accessibility.</p>
             </div>
 
             <div>
 
-              <ul class="numbered-items" role="list">
-                <li>
+              <ul class="numbered-items | flow" role="list">
+                <li  class="flow" style="--flow-spacer: 1.45em">
+                  
                   <h3 class="fs-600 fw-bold">
                     Track Company wide Progress
                   </h3>
 
-                  <p>For a delivery website, whether you're 
+                  <p data-width="wide">For a delivery website, whether you're 
                     running a food delivery 
                     service, an e-commerce platform 
                   </p>
 
                 </li>
 
-                <li>
+                <li  class="flow" style="--flow-spacer: 1.45em">
+
                   <h3 class="fs-600 fw-bold">
                     Delivery Address Entry
                   </h3>
 
-                  <p>For a delivery website, whether you're 
+                  <p data-width="wide">For a delivery website, whether you're 
                     running a food delivery 
                     service, an e-commerce platform 
                   </p>
 
                 </li>
               
-                <li>
+                <li  class="flow" style="--flow-spacer: 1.45em">
+
                   <h3 class="fs-600 fw-bold">
                     Real-Time Order Tracking
                   </h3>
 
-                  <p>For a delivery website, whether you're 
+                  <p data-width="wide">For a delivery website, whether you're 
                     running a food delivery 
                     service, an e-commerce platform 
                   </p>
@@ -120,29 +136,27 @@
 
       <!-- Section for carousel-->
 
-      <section class="carousel">
+      <section class="carousel | padding-block-700">
         <h2 class="fs-secondary-heading">Feedback</h2>
       
         <!-- add carousel here -->
 
         <button class="button">Explore</button>
       
-      
-      
       </section>
 
       <!-- section for cta  -->
 
-      <section class="cta | bg-primary-400 text-accent-100">
+      <section class="cta | bg-accent-400 text-accent-100 padding-block-700">
         <div class="container">
           
-          <div class="even-columns">
+          <div class="even-columns vertical-align-center">
             <div>
-              <p class="fs-secondary-heading fw-bold">Remote Collaboration</p>
+              <p class="fs-secondary-heading fw-bold" data-width="wide">Remote Collaboration</p>
             </div>
           
-            <div>
-              <button class="button" data-type="inverted">Take a look</button>
+            <div class="justify-self-end">
+              <button class="button" data-type="inverted">Take A Look</button>
             </div>
           
           </div>
@@ -154,9 +168,10 @@
 
     <!-- section footer -->
 
-    <footer class="bg-neutral-900 text-neutral-100">
+    <footer class="bg-neutral-900 text-neutral-100 | padding-block-700">
       <div class="container">
         <div class="even-columns">
+
           <div>
             <a href=""><img src="Images/logo.svg" alt="logo"></a>
             
@@ -170,10 +185,10 @@
           
           </div>
 
-          <div>
+          <div class="flow" style="--flow-spacer: 1.45em" >
             <nav class="footer-nav">
-              <ul aria-label="footer" role="list">
-                <li><a href="">Home</a></li>
+              <ul class="flow" style="--flow-spacer: 1.45em" aria-label="footer" role="list">
+                <li><a href="" style="color: aliceblue;">Home</a></li>
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Products</a></li>
                 <li><a href="">About Us</a></li>
@@ -183,11 +198,11 @@
             </nav>
           </div>
 
-          <div>
+          <div class="flow" style="--flow-spacer: 1.45em">
             <form action="">
               <input type="email">
               <button class="button">Sign Up</button>
-              <p>Copyright 2023. All Rights Reserved.</p>
+              <p  data-width="wide">Copyright 2023. All Rights Reserved.</p>
             </form>
           </div>
         
