@@ -18,9 +18,14 @@
 
     <header class="primary-header">
       <div class="container">
+
         <div class="nav-wrapper">
 
-          <a href="#"><img src="/Images/logo.svg" alt="logo"></a>
+          <a href="#" aria-label="logo">
+            <svg class="logo" style="--logo-color:red" width="140" height="25">
+              <use xlink:href="Images/logo.svg#logo"></use>
+            </svg>
+          </a>
 
           <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
             <img class="icon-hamburger" src="Images/icon-hamburger.svg" alt="Menu Icon" aria-hidden="true">
@@ -32,9 +37,9 @@
             <ul aria-label="Primary" role="list" class="nav-list">
               <li><a href="/index.html">Home</a></li>
               <li><a href="/about.html">About</a></li>
-              <li><a href="/portfolio.html">Service</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/service.html">Service</a></li>
+              <li><a href="/portfolio.html">Portfolio</a></li>
+              <li><a href="/contact.html">Contact</a></li>
             </ul>
           </nav>
           
@@ -88,44 +93,45 @@
             <div>
 
               <ul class="numbered-items | flow" role="list">
-                <li  class="flow" style="--flow-spacer: 1.45em">
-                  
-                  <h3 class="fs-600 fw-bold">
-                    Track Company wide Progress
-                  </h3>
-
-                  <p data-width="wide">For a delivery website, whether you're 
-                    running a food delivery 
-                    service, an e-commerce platform 
-                  </p>
-
+                <li style="--flow-spacer: 1em">
+                  <div>
+                    <h3 class="fs-600 fw-bold">
+                      Track Company wide Progress
+                    </h3>
+  
+                    <p data-width="wide">For a delivery website, whether you're 
+                      running a food delivery 
+                      service, an e-commerce platform 
+                    </p>
+                  </div>
                 </li>
 
-                <li  class="flow" style="--flow-spacer: 1.45em">
-
-                  <h3 class="fs-600 fw-bold">
-                    Delivery Address Entry
-                  </h3>
-
-                  <p data-width="wide">For a delivery website, whether you're 
-                    running a food delivery 
-                    service, an e-commerce platform 
-                  </p>
-
+                <li style="--flow-spacer: 1em">
+                  <div>
+                    <h3 class="fs-600 fw-bold">
+                      Delivery Address Entry
+                    </h3>
+  
+                    <p data-width="wide">For a delivery website, whether you're 
+                      running a food delivery 
+                      service, an e-commerce platform 
+                    </p>
+                  </div>
                 </li>
-              
-                <li  class="flow" style="--flow-spacer: 1.45em">
 
-                  <h3 class="fs-600 fw-bold">
-                    Real-Time Order Tracking
-                  </h3>
-
-                  <p data-width="wide">For a delivery website, whether you're 
-                    running a food delivery 
-                    service, an e-commerce platform 
-                  </p>
-
+                <li style="--flow-spacer: 1em">
+                  <div>
+                    <h3 class="fs-600 fw-bold">
+                      Real-Time Order Tracking
+                    </h3>
+  
+                    <p data-width="wide">For a delivery website, whether you're 
+                      running a food delivery 
+                      service, an e-commerce platform 
+                    </p>
+                  </div>
                 </li>
+
               </ul>
 
             </div>
@@ -168,82 +174,82 @@
 
     <!-- section footer -->
 
-    <footer class="bg-neutral-900 text-neutral-100 | padding-block-700">
+    <footer class="bg-neutral-900 text-neutral-100 | padding-block-700 primary-footer ">
       <div class="container">
-        <div class="even-columns">
+        <div class="primary-footer-wrapper | even-columns">
+          
+          <div class="primary-footer-logo-social">
 
-          <div>
-            <a href=""><img src="Images/logo.svg" alt="logo"></a>
+            <a href="/index.html" aria-label="logo"> 
+              <svg style="--logo-color:white" class="logo" width="140" height="25">
+                <use xlink:href="Images/logo.svg#logo"></use>
+              </svg>
+            </a>
             
             <ul role="list" aria-label="Social Links" class="social-list">
 
               <li>
-                <a aria-label="facebook"  href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="social-icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                <a aria-label="facebook"  href="https://www.facebook.com/profile.php?id=100093484083511&mibextid=ZbWKwL" target="_blank">
+                  <svg class="social-icon">
+                    <use xlink:href="/Images/social-icons.svg#icon-facebook"></use>
                   </svg>
-                  </a>
+                </a>
               </li>
 
 
-              <li><a aria-label="Instagram" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" class="social-icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
-                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                  <path d="M16.5 7.5l0 .01"></path>
-               </svg>
-              </a></li>
-
-
-              <li><a aria-label="Twitter"   href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" class="social-icon icon-tabler icon-tabler-brand-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
-                  <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+              <li><a aria-label="Instagram" href="https://instagram.com/britinogn_" target="_blank">
+                <svg class="social-icon">
+                  <use xlink:href="/Images/social-icons.svg#icon-instagram"></use>
                 </svg>
               </a></li>
 
-              <li><a aria-label="Github"    href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" class="social-icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-                </svg> 
+
+              <li><a aria-label="pin"   href="#">
+                <svg class="social-icon">
+                  <use xlink:href="/Images/social-icons.svg#icon-pinterest"></use>
+                </svg>
               </a></li>
 
-              <li><a aria-label="linkedin"  href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" class="social-icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
-                  <path d="M8 11l0 5"></path>
-                  <path d="M8 8l0 .01"></path>
-                  <path d="M12 16l0 -5"></path>
-                  <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
-                </svg> 
+              <li><a aria-label="Twitter"    href="https://twitter.com/officialbritino" target="_blank">
+                <svg class="social-icon">
+                  <use xlink:href="/Images/social-icons.svg#icon-twitter"></use>
+                </svg>
+              </a></li>
+
+              <li><a aria-label="youtube"  href="#">
+                <svg class="social-icon">
+                  <use xlink:href="/Images/social-icons.svg#icon-youtube"></use>
+                </svg>
               </a></li>
             </ul>
           
           </div>
 
-          <div class="flow" style="--flow-spacer: 1em" >
+          <div class="primary-footer-nav" style="--flow-spacer: 1em" >
+            
             <nav class="footer-nav">
               <ul class="flow" style="--flow-spacer: 1em" aria-label="footer" role="list">
                 <li><a href="" style="color: aliceblue;">Home</a></li>
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Products</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="/about.html">About Us</a></li>
                 <li><a href="">Community</a></li>
               </ul>
             
             </nav>
           </div>
 
-          <div class="flow" style="--flow-spacer: 1.45em">
+          <div class="primary-footer-form" style="--flow-spacer: 1em">
             <form action="">
-              <input type="email">
-              <button class="button">Sign Up</button>
-              <p  data-width="wide">Copyright 2023. All Rights Reserved.</p>
+              <input type="email" placeholder="Enter Your Email">
+              <button class="button" data-shadow="none">Sign Up</button>
+              <!-- <p  data-width="wide">Copyright 2023. All Rights Reserved.</p> -->
+              <p>&copy;
+                <script>
+                    document.write(new Date().getFullYear());
+                </script> 
+                <a href="https://brightonwuemeri.com/" target="_blank">Bright Onwuemeri</a>
+              </p>
             </form>
           </div>
         
