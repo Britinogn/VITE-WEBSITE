@@ -12,6 +12,9 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+    <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
   </head>
   <body>
     <!-- <div id="app"></div> -->
@@ -22,14 +25,13 @@
         <div class="nav-wrapper">
 
           <a href="#" aria-label="logo">
-            <svg class="logo" style="--logo-color:red" width="140" height="25">
+            <svg class="logo" style="--logo-color:purple" width="140" height="25">
               <use xlink:href="Images/logo.svg#logo"></use>
             </svg>
           </a>
 
           <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            <img class="icon-hamburger" src="Images/icon-hamburger.svg" alt="Menu Icon" aria-hidden="true">
-            <img class="icon-close" src="Images/icon-close.svg" alt="Close Icon" aria-hidden="true">
+
             <span class="visually-hidden">MeNu</span>
           </button>
   
@@ -41,6 +43,9 @@
               <li><a href="/portfolio.html">Portfolio</a></li>
               <li><a href="/contact.html">Contact</a></li>
             </ul>
+          
+            <!-- <img class="icon-hamburger" src="Images/icon-hamburger.svg" alt="Menu Icon" aria-hidden="true">
+            <img class="icon-close" src="Images/icon-close.svg" alt="Close Icon" aria-hidden="true"> -->
           </nav>
           
           <button class="button | display-sm-none display-md-inline-flex">Get Started</button>
@@ -51,7 +56,7 @@
     </header>
 
     <main>
-      <section class="padding-block-900"> 
+      <section class="hero | text-align-center-sm padding-block-900"> 
         <div class="container">
           <div class="even-columns">
 
@@ -69,8 +74,8 @@
               <button class="button">Talk To Us!</button>
             </div>
 
-            <div>
-              <img src="/Images/illustration-intro.svg" alt="">
+            <div class="hero-image">
+              <img src="/Images/illustration-intro.svg" alt="hero image" class="mx-auto">
             </div>
 
 
@@ -83,7 +88,7 @@
       <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
-            <div class="flow">
+            <div class="flow text-center-sm-only margin">
               <h2 class="fs-secondary-heading fw-bold">
                 Why Us?
               </h2>
@@ -93,39 +98,39 @@
             <div>
 
               <ul class="numbered-items | flow" role="list">
-                <li style="--flow-spacer: 1em">
-                  <div>
-                    <h3 class="fs-600 fw-bold">
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
+                    <h3 class="numbered-items__title | fs-600 fw-bold">
                       Track Company wide Progress
                     </h3>
   
-                    <p data-width="wide">For a delivery website, whether you're 
+                    <p data-width="wide" class="numbered-items__body">For a delivery website, whether you're 
                       running a food delivery 
                       service, an e-commerce platform 
                     </p>
                   </div>
                 </li>
 
-                <li style="--flow-spacer: 1em">
-                  <div>
-                    <h3 class="fs-600 fw-bold">
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
+                    <h3 class=" numbered-items__title | fs-600 fw-bold">
                       Delivery Address Entry
                     </h3>
   
-                    <p data-width="wide">For a delivery website, whether you're 
+                    <p data-width="wide" class="numbered-items__body">For a delivery website, whether you're 
                       running a food delivery 
                       service, an e-commerce platform 
                     </p>
                   </div>
                 </li>
 
-                <li style="--flow-spacer: 1em">
-                  <div>
-                    <h3 class="fs-600 fw-bold">
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
+                    <h3 class=" numbered-items__title | fs-600 fw-bold">
                       Real-Time Order Tracking
                     </h3>
   
-                    <p data-width="wide">For a delivery website, whether you're 
+                    <p data-width="wide" class="numbered-items__body">For a delivery website, whether you're 
                       running a food delivery 
                       service, an e-commerce platform 
                     </p>
@@ -142,10 +147,58 @@
 
       <!-- Section for carousel-->
 
-      <section class="carousel | padding-block-700">
-        <h2 class="fs-secondary-heading">Feedback</h2>
+      <section class="carousel | padding-block-700 text-center">
+        <h2 class="fs-secondary-heading fw-bold">Feedback</h2>
       
         <!-- add carousel here -->
+
+        <ul class="slider">
+          <li>
+            <img src="images/avatar-anisha.png" alt="">
+  
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Anesha Lang</h3>
+              <p data-width="wide">“Manage has supercharged our team’s workflow. The ability to maintain visibility on
+                larger milestones at all times keeps
+                everyone motivated.”</p>
+            </div>
+          </li>
+          <li>
+            <img src="images/avatar-ali.png" alt="">
+  
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Ali Bravo</h3>
+              <p data-width="wide">“We have been able to cancel so many other subscriptions since using Manage. There is
+                no
+                more cross-channel
+                confusion
+                and everyone is much more focused.”</p>
+            </div>
+          </li>
+          <li>
+            <img src="images/avatar-richard.png" alt="">
+  
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Richard Watts</h3>
+              <p data-width="wide">“Manage allows us to provide structure and process. It keeps us organized and focused.
+                I
+                can’t stop recommending them to
+                everyone I talk to!” </p>
+            </div>
+          </li>
+          <li>
+            <img src="images/avatar-shanai.png" alt="">
+  
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Shanai Gough</h3>
+              <p data-width="wide">“Their software allows us to track, manage and collaborate on our projects from
+                anywhere.
+                It keeps the whole team
+                in-sync without being intrusive.” </p>
+            </div>
+          </li>
+        </ul>
+
 
         <button class="button">Explore</button>
       
